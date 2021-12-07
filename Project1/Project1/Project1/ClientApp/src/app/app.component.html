@@ -1,0 +1,63 @@
+<body>
+  <!--<app-nav-menu></app-nav-menu>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>-->
+  <app-nav-menu></app-nav-menu>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Topics-Menu </div>
+      <div class="list-group list-group-flush">
+        <a class="nav-link" style="margin-top:5px" *ngFor="let item of sideMenuList" (click)="getALLData(item)" [ngStyle]="{'background-color':(activeSidebar==item.name)?'#1030B6':'#EFEFEF'}" [style.color]="(activeSidebar==item.name)?'#ffffff':'#000000'">{{item.name}}</a>
+        <!--<a class="nav-link" style="margin-top:5px" *ngFor="let item of sideMenuList" (click)="getALLData(item)" [ngStyle]="{'background-color':(activeSidebar==item.name)?'#0000ff':'#EFEFEF'}" [style.color]="(activeSidebar==item.name)?'#ffffff':'#000000'" >{{item.name}}</a>-->
+        <!--<a *ngFor="let item of sideMenuList" class="list-group-item list-group-item-action bg-light" (click)="getALLData(item)">{{item.name}}</a>-->
+        <!--<a [routerLink]="['/counter']" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+  <a [routerLink]="['/fetch-data']" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+  <a [routerLink]="['/counter']" class="list-group-item list-group-item-action bg-light">Overview</a>
+  <a [routerLink]="['/fetch-data']" class="list-group-item list-group-item-action bg-light">Events</a>
+  <a [routerLink]="['/counter']" class="list-group-item list-group-item-action bg-light">Profile</a>
+  <a [routerLink]="['/fetch-data']" class="list-group-item list-group-item-action bg-light">Status</a>-->
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                aria-label="Toggle navigation"
+                [attr.aria-expanded]="isExpanded"
+                (click)="toggle()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+             [ngClass]="{ show: isExpanded }">
+          <ul class="navbar-nav flex-grow">
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link text-dark" [routerLink]="['/counter']">Core Java</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link text-dark" [routerLink]="['/fetch-data']">SQL</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+          <p>
+            <button style="margin-right:5px;margin-top:5px" type="button" *ngFor="let program of listOfPrograms" (click)="getData(program)" [ngClass]="(subTitle==program.value)?'btn-sm btn-primary m-l-5':'btn-sm btn-light m-l-5'" aria-controls="collapseExample">
+              {{program.value}}
+            </button>
+          </p>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+</body>

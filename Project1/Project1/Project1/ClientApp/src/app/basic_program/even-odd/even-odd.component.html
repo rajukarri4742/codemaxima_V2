@@ -1,0 +1,116 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Even or Odd</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <pre>
+A number which is divisible by 2 and generates a remainder of 0 is called an even   number.
+A number that is not divisible by 2 and generates a remainder of 1 is called an odd number. 
+
+E.g.: - (10%2------we need to tell number is odd number or even number.
+        2) 10 (5
+           10  
+          ____
+            0
+          ____
+ 0 is Remainder  So, 10 is an even number
+                
+E.g.: - 11%2------we need to tell number is odd number or even number.          
+        2) 11 (5
+           10     
+          ____
+            1
+          ____
+ 1 is Remainder  So, 11 is an odd number
+                
+            </pre>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#InputOutput" aria-expanded="false" aria-controls="InputOutput">
+                Sample Input & Output
+              </button>
+            </h5>
+          </div>
+          <div id="InputOutput" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+              <pre>
+Input:
+23
+44
+
+Output:
+23 is a even numver
+44 is a odd number
+            </pre>
+                
+                
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/basic/evenodd.JPG" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-common [url]="'assets/videos/basicproblems/evenodd.mp4'"></app-video-common>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+             
+              <div data-pym-src="https://www.jdoodle.com/embed/v0/3VBR"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--<p>   another collapse end here </p>-->
+    </div>
+  </div> 
+  

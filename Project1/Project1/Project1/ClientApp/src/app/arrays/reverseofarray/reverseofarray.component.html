@@ -1,0 +1,131 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Reverse of an Array</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <pre>
+
+In this program, we need to print the elements of the array in reverse order that is,
+the last element should be displayed first, followed by second last element and so on.
+
+for example: 
+
+1  2  4  5   7
+
+Above array in reversed order:
+
+7  5  4  2   1
+
+Method 1:
+
+we can print the array from last to first i.e consider below
+
+for (int i = arr.length-1; i >= 0; i--)  
+      System.out.print(arr[i] + " ");  
+
+
+Method 2:
+
+By using temporary array also, we can reverse the array. Consider the below,
+
+for example:
+
+int size=sc.nextInt();
+
+int a[]=new int[size];
+int b[]=new int[size];
+
+we need to print the array "a" in the reverse order. So, we are considering temporary array i.e array "b".
+So,we can take the last element in the array "a" and fill it in the first position in the second array "b".
+In the same way, the second last element in the array "a" should be displayed in the second element in the array "b" and so on...
+
+            </pre>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#InputOutput" aria-expanded="false" aria-controls="InputOutput">
+                Sample Input & Output
+              </button>
+            </h5>
+          </div>
+          <div id="InputOutput" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+
+            <pre>
+
+            </pre>
+                
+                
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-common [url]="'assets/videos/'"></app-video-common>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+             
+              <div data-pym-src="https://www.jdoodle.com/embed/v0/3VBR"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--<p>   another collapse end here </p>-->
+    </div>
+  </div> 
+  
+
+
+
+

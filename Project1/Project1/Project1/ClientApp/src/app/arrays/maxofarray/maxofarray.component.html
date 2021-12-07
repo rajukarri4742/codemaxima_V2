@@ -1,0 +1,131 @@
+<div>
+    <div class="card card-body">
+      <!--<p>   another collapse start here </p>-->
+      <h3>Maximum Value of an Array</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#ProblemStatement" aria-expanded="true" aria-controls="ProblemStatement">
+                Problem Statement
+              </button>
+            </h5>
+          </div>
+
+          <div id="ProblemStatement" class="collapse show" aria-labelledby="headingOne">
+            <div class="card-body">
+              <pre>
+
+In the question itself, we can understand that we need to find the maximum i.e highest number in an array.
+Consider the below steps for better understanding that how we can find the maximum number.
+
+Example: int arr[] = {{ '{' }}1,4,2,5,7{{ '}' }}
+
+Step 1: we can take the first element in an array and assigned it to an variable max i.e max = arr[0] = 1, 
+	  then we can compare 1 with remaining elements in the array.
+        
+	   1 > 4 (first element is comparing with second element)
+        false
+        
+        Here, 1 is less than 4 so we will change the value in max to 4. So, max = 4.
+
+Step 2: compare the value in max i.e 4 with the next element in an array i.e 2.
+
+	   4 > 2 -----> true 
+	
+       Here, 4 is greater than 2 is correct. So no need of changing the max value because it is the highest number   	 till now.
+	 Max = 4.
+
+Step 3: compare the value in max i.e 4 with the next element in an array i.e 5.
+
+	   4 > 5 -----> false 
+	
+	Here, 4 is less than 5 so we will change the value in max to 5. So, max = 5.
+
+Step 4: compare the value in max i.e 5 with the next element in an array i.e 7.
+
+	   5 > 7 -----> false 
+	
+	Here, 5 is less than 7 so we will change the value in max  	to 7. So, max = 7.		
+	So, this is the end of an array and we found the number in max is 7. So print the maximum number in the array is 7.
+
+
+
+              </pre>
+              
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#InputOutput" aria-expanded="false" aria-controls="InputOutput">
+                Sample Input & Output
+              </button>
+            </h5>
+          </div>
+          <div id="InputOutput" class="collapse" aria-labelledby="headingTwo">
+            <div class="card-body">
+
+            <pre>
+
+            </pre>
+                
+                
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Program" aria-expanded="false" aria-controls="Program">
+                Program
+              </button>
+            </h5>
+          </div>
+          <div id="Program" class="collapse" aria-labelledby="headingThree">
+            <div class="card-body">
+              <img src="assets/img/" alt="program">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#DebuggingVideo" aria-expanded="false" aria-controls="DebuggingVideo">
+                DebuggingVideo
+              </button>
+            </h5>
+          </div>
+          <div id="DebuggingVideo" class="collapse" aria-labelledby="headingFour">
+            <div class="card-body">
+              <app-video-common [url]="'assets/videos/'"></app-video-common>              
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Practice" aria-expanded="false" aria-controls="Practice">
+                Practice
+              </button>
+            </h5>
+          </div>
+          <div id="Practice" class="collapse" aria-labelledby="headingFive">
+            <div class="card-body">
+             
+              <div data-pym-src="https://www.jdoodle.com/embed/v0/3VBR"></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--<p>   another collapse end here </p>-->
+    </div>
+  </div> 
+  
+
+
+
